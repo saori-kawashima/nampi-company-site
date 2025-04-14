@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社楠比 | nampi</title>
+    <!-- Google Fonts - Shippori Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <h1 class="logo-text">株式会社楠比</h1>
+                    <span class="logo-accent">nampi</span>
+                </a>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="#services">事業内容</a></li>
+                        <li><a href="https://kosugi-coworkcafe.com/3" target="_blank" rel="noopener" class="nav-contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-title">
+                    <span class="hero-title-line">The personal is systemic roots.</span>
+                    <span class="hero-title-line">My work, my choice.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration"></span>
+                事業内容
+                <span class="title-decoration"></span>
+            </h2>
+            <ul class="services-list">
+                <li>
+                    <span class="service-number">01</span>
+                    <span class="service-text">コワーキングスペース企画運営</span>
+                </li>
+                <li>
+                    <span class="service-number">02</span>
+                    <span class="service-text">Webマーケティング</span>
+                </li>
+                <li>
+                    <span class="service-number">03</span>
+                    <span class="service-text">システム開発・Web制作ディレクション</span>
+                </li>
+                <li>
+                    <span class="service-number">04</span>
+                    <span class="service-text">研修コンテンツ企画提供</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration"></span>
+                会社概要
+                <span class="title-decoration"></span>
+            </h2>
+            <div class="about-info">
+                <div class="about-row">
+                    <div class="label">会社名</div>
+                    <div class="value">株式会社楠比</div>
+                </div>
+                <div class="about-row">
+                    <div class="label">住所</div>
+                    <div class="value">神奈川県川崎市中原区新丸子東3-946-3 MKファーストビル2階</div>
+                </div>
+                <div class="about-row">
+                    <div class="label">設立</div>
+                    <div class="value">2024年9月</div>
+                </div>
+                <div class="about-row">
+                    <div class="label">資本金</div>
+                    <div class="value">1,000,000円</div>
+                </div>
+                <div class="about-row">
+                    <div class="label">代表</div>
+                    <div class="value">代表取締役社長　川島沙織</div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration"></span>
+                お問い合わせ
+                <span class="title-decoration"></span>
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    サービスに関すお問い合わせやご相談は、以下のフォームからご連絡ください。
+                </p>
+                <a href="https://kosugi-coworkcafe.com/3" target="_blank" rel="noopener" class="contact-link">お問い合わせフォーム</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>株式会社楠比</h3>
+                    <p class="footer-tagline">The personal is systemic roots.<br>My work, my choice.</p>
+                </div>
+                <div class="footer-column">
+                    <ul class="footer-links">
+                        <li><a href="#services">事業内容</a></li>
+                        <li><a href="#about">会社概要</a></li>
+                        <li><a href="https://kosugi-coworkcafe.com/3" target="_blank" rel="noopener">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>サービス</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://kosugi-coworkcafe.com/" target="_blank" rel="noopener">武蔵小杉駅前コワークカフェ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 株式会社楠比. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロール時にヘッダーの背景色を変更するためのJavaScript -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ページ内リンクのスムーズスクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ページ読み込み時のフェードインアニメーション
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
